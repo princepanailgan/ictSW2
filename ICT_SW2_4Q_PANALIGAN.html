@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+
+<html>
+<title>Time Converter</title>
+<body>
+<h2>Time converter for seconds</h2>
+<p>
+<body background="https://images.unsplash.com/photo-1465101162946-4377e57745c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c3BhY2UlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&w=1000&q=80
+<label>To Minutes</label>
+  <input id="input Minutes" type="Number" placeholder="Seconds" oninput="Secondstominutes(this.value)" onchange="Secondstominutes(this.value)">
+</p>
+<p>seconds: <span id="output seconds"></span></p>
+
+<script>
+function Hourstoseconds(valNum) {
+  document.getElementById("output seconds").innerHTML=valNum360;
+}
+</script>
+<p>
+  <label>To Hours</label>
+  <input id="input Hours" type="number" placeholder="Hours" oninput="Secondstohours(this.value)" onchange="Secondstohours(this.value)">
+</p>
+<p>Hours:<span id="output Minutes"></span></p>
+
+<script>
+function Hourstominutes(valNum) {
+  document.getElementById("output Minutes").innerHTML=valNum60;
+}
+</script>
+<p>
+  <label>To days</label>
+  <input id="input Hours" type="number" placeholder="days" oninput="Hourstodays(this.value)" onchange="Hourstodays(this.value)">
+</p>
+<p>days: <span id="output days"></span></p>
+
+<script>
+function Hourstodays(valNum) {
+  document.getElementById("output days").innerHTML=valNum/24;
+}
+</script>
+
+</body>
+
+
+
+
+</html>
+
+</table>
